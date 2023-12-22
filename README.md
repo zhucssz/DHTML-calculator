@@ -10,6 +10,4 @@ npm install mathjs
 ```
 
 ## Calculator Layout
-[!image](https://github.com/deveju/web-calculator/assets/117952692/afefa5bb-24db-430b-b2a3-0de8b9fa77d0)
-
-
+![image](https://github.com/deveju/web-calculator/assets/117952692/afefa5bb-24db-430b-b2a3-0de8b9fa77d0)
