@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="icon" type="image/png" href="resources/images/icons/icon.png">
+    <script src="resources/js/script.js"></script>
+    <script src="https://unpkg.com/mathjs@9.0.0/lib/browser/math.js"></script> <!--math.js-->
+</head>
+<body>
+    <div class="calculator">
+        <div class="top">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <div class="visor">
+            <input type="text" id="visorText" class="visortxt"></input>
+        </div>
+        <div class="buttons">
+            <!--LINHA ROW 1-->
+            <button type="button" id="ce" class="buttonsR1" onclick="clearVisor()">C</button>
+            <label for="mc" id="lmc" class="buttonsR1">MC</label>
+            <button type="button" id="mc" class="buttonsR1"  onclick="mc()"></button>
+            <label for="mr" id="lmr" class="buttonsR1">MR</label>
+            <button type="button" id="mr" class="buttonsR1" onclick="mr()"></button>
+            <label for="mm" id="lmm" class="buttonsR1">M-</label>
+            <button type="button" id="mm" class="buttonsR1" onclick="mm()"></button>
+            <label for="mp" id="lmp" class="buttonsR1">M+</label>
+            <button type="button" id="mp" class="buttonsR1" onclick="mp()"></button>
+            <!--LINHA ROW 2-->
+            <button type="button" id="seven" class="buttonsR2" onclick="digits('seven')">7</button>
+            <button type="button" id="eight" class="buttonsR2" onclick="digits('eight')">8</button>
+            <button type="button" id="nine" class="buttonsR2" onclick="digits('nine')">9</button>
+            <button type="button" id="mult" class="buttonsR2" onclick="digits('mult')">X</button>
+            <button type="button" id="divi" class="buttonsR2" onclick="digits('divi')">÷</button>
+            <!--LINHA ROW 3 -->
+            <button type="button" id="four" class="buttonsR3" onclick="digits('four')">4</button>
+            <button type="button" id="five" class="buttonsR3" onclick="digits('five')">5</button>
+            <button type="button" id="six" class="buttonsR3" onclick="digits('six')">6</button>
+            <button type="button" id="sum" class="buttonsR3" onclick="digits('sum')">+</button>
+            <button type="button" id="sub" class="buttonsR3" onclick="digits('sub')">-</button>
+            <!--LINHA ROW 4 -->
+            <button type="button" id="one" class="buttonsR4" onclick="digits('one')">1</button>
+            <button type="button" id="two" class="buttonsR4" onclick="digits('two')">2</button>
+            <button type="button" id="three" class="buttonsR4" onclick="digits('three')">3</button>
+            <button type="button" id="neg" class="buttonsR4" onclick="digits('neg')">+/-</button>
+            <button type="button" id="eq" class="buttonsR4" onclick="operation()">=</button> <!--resultado-->
+            <!--LINHA ROW 5 -->
+            <button type="button" id="delete" class="buttonsR5" onclick="deleteLast()">⌫</button>
+            <button type="button" id="zero" class="buttonsR5" onclick="digits('zero')">0</button>
+            <button type="button" id="dot" class="buttonsR5" onclick="digits('dot')">.</button>
+            <button type="button" id="sqr" class="buttonsR5" onclick="srqrrt()">√x</button>
+        </div>
+    </div>
+    <div id="deveju">
+        https://github.com/deveju
+    </div>
+</body>
+</html>

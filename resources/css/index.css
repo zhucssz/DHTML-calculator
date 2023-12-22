@@ -1,0 +1,349 @@
+@font-face {
+    font-family: digital;
+    src: url(../fonts/digital-7.ttf);
+}
+
+body {
+    background-image: linear-gradient(to right,#727A9A,#FACEFB);
+    position: relative;
+}
+
+.calculator {
+    position: fixed;
+    background-color: rgb(28, 27, 27);
+    border-radius: 1vh;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 99vh;
+    width:88vh;
+    box-shadow: inset -0.2vh -0.2vh 0.8vh 0.2vh rgb(0,0,0,0.5), -0.2vh -0.2vh 0.8vh 0.2vh rgb(0,0,0,0.5);
+}
+
+.calculator .top {
+    background-color: #1b1111;
+    position: relative;
+    top: 7vh;
+    left: 70%;
+    border-radius: 1vh;
+    transform: translate(-50%,-50%);
+    box-shadow: inset -0.3vh 0vh 1.2vh 0.05vh rgba(0, 0, 0, 0.5);
+    height: 5vh;
+    width:35vh;
+}
+
+.lines {
+    width: 0.1vh;
+    position: absolute;
+    height: 5vh;
+    background-color: black; 
+    position: absolute; 
+    left: 15%;
+    margin-left:1vh;
+    margin-right: 1vh;
+    box-shadow: 7vh 0 0 0 black;
+}
+
+.lines:nth-child(odd){
+    margin-left: 15vh;
+}
+
+.calculator .visor {
+    position: fixed;
+    background-color: rgb(125,140,115,1);
+    box-shadow: inset -2vh -0.5vh 2vh 0.5vh rgb(50,50,80,0.5);
+    top:20vh;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 12vh;
+    width:77vh;
+    border-radius: 1vh;
+    font-family: digital;
+}
+
+.calculator .visor .visortxt {
+    background-color: rgb(0,0,0,0);
+    height: 12vh;
+    width:73vh;
+    border-radius: 1vh;
+    font-family: digital;
+    font-weight:normal;
+    font-size: 10vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    letter-spacing: 0.3vh;
+}
+
+.calculator .buttonsR1 {
+    position:fixed;
+    font-size: 4vh;
+    font-family: arial;
+    color: rgb(180,200,150,1);
+    background-color: rgb(22, 22, 22);
+    top: 32.5vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 black;
+}
+
+.calculator .buttonsR1:hover { 
+    background-color: rgb(20, 20, 20);
+}
+.calculator .buttonsR2:hover { 
+    background-color: rgb(20, 20, 20);
+}
+.calculator .buttonsR3:hover { 
+    background-color: rgb(20, 20, 20);
+}
+.calculator .buttonsR4:hover { 
+    background-color: rgb(20, 20, 20);
+}
+.calculator .buttonsR5:hover { 
+    background-color: rgb(20, 20, 20);
+}
+
+#ce {
+    border-radius:50%;
+    width: 10vh;
+    height: 10vh;
+    left: 10vh;
+}
+
+#mc {
+    left: 25vh;
+    width: 10vh;
+    height: 5vh;
+    top: 37.5vh;
+}
+
+#lmc {
+    top:33.5vh;
+    left:25vh;
+    width: 10vh;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    box-shadow: none;
+}
+
+#mr {
+    left: 40vh;
+    width: 10vh;
+    height: 5vh;
+    top: 37.5vh;
+}
+
+#lmr {
+    top:33.5vh;
+    left:40vh;
+    width: 10vh;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    box-shadow: none;
+}
+
+#mm {
+    left: 55vh;
+    width: 10vh;
+    height: 5vh;
+    top: 37.5vh;
+}
+
+#lmm {
+    top:33.5vh;
+    left:55vh;
+    width: 10vh;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    box-shadow: none;
+}
+
+#mp {
+    left: 70vh;
+    width: 10vh;
+    height: 5vh;
+    top: 37.5vh;
+}
+
+#lmp {
+    top:33.5vh;
+    left:70vh;
+    width: 10vh;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    box-shadow: none;
+}
+
+.calculator .buttonsR2 {
+    position:fixed;
+    font-size: 4vh;
+    font-family: arial;
+    color: rgb(180,200,150,1);
+    background-color: rgb(22, 22, 22);
+    top: 45vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 black;
+}
+
+#seven {
+    left: 10vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#eight {
+    left: 25vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#nine {
+    left: 40vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#mult {
+    left: 55vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#divi {
+    left: 70vh;
+    width: 10vh;
+    height: 10vh;
+    font-size: 6vh;
+    font-weight: 100;
+}
+
+.calculator .buttonsR3 {
+    position:fixed;
+    font-size: 4vh;
+    font-family: arial;
+    color: rgb(180,200,150,1);
+    background-color: rgb(22, 22, 22);
+    top: 57.5vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 black;
+}
+
+#four {
+    left: 10vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#five {
+    left: 25vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#six {
+    left: 40vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#neg {
+    left: 55vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#sub {
+    left: 70vh;
+    width: 10vh;
+    height: 10vh;
+    font-size: 6vh;
+    font-weight: 100;
+}
+
+.calculator .buttonsR4 {
+    position:fixed;
+    font-size: 4vh;
+    font-family: arial;
+    color: rgb(180,200,150,1);
+    background-color: rgb(22, 22, 22);
+    top: 70vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 black;
+}
+
+#one {
+    left: 10vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#two {
+    left: 25vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#three {
+    left: 40vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#sum {
+    left: 55vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#eq {
+    left: 70vh;
+    width: 10vh;
+    height: 22vh;
+    font-size: 6vh;
+}
+
+.calculator .buttonsR5 {
+    position:fixed;
+    font-size: 4vh;
+    font-family: arial;
+    color: rgb(180,200,150,1);
+    background-color: rgb(22, 22, 22);
+    top: 82.5vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh 0 black;
+}
+
+#delete {
+    left: 10vh;
+    width: 10vh;
+    height: 10vh;
+    font-size: 3vh;
+}
+
+#zero {
+    left: 25vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#dot {
+    left: 40vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#sqr {
+    left: 55vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+#deveju {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1vh;
+    font-size: 2vh;
+}
